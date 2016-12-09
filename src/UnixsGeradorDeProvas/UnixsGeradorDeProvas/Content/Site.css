@@ -1,7 +1,5 @@
-body{
+﻿body{
     min-height:500px;
-   
-    
 }
 header{
     position: absolute;
@@ -12,8 +10,10 @@ header{
     background:  #262D63;
     text-align: center;
     clear: both;
-    
-  
+}
+
+.conteudo{
+    min-height:600px;
 }
 p,h1{
     color:white;

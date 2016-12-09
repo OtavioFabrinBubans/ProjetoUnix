@@ -1,0 +1,31 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/modernizr")
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav id="menu-index">
+        <div class="menu-home">Gerar uma Prova</div>
+        <div>Provas</div>
+        <div>Professores</div>
+        <div>Cursos</div>
+        <div>Disciplinas</div>
+        <div>Questões</div>
+        <div>Polos</div>
+        <div><a href="@Url.Action("CadastroDificuldade", "Home")">Dificuldade</a></div>
+    </nav>
+   
+</body>
+</html>
