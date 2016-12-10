@@ -18,7 +18,8 @@ namespace UnixsGeradorDeProvas.Repositorio
         }
 
         public DbSet<Dificuldade> Dificuldade { get; set; }
-        
+        public DbSet<Disciplina> Disciplina { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

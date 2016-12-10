@@ -8,30 +8,27 @@ using UnixsGeradorDeProvas.Repositorio;
 
 namespace UnixGeradorDeProvas.Repositorio
 {
-    public class DificuldadeRepositorio :IDificuldadeRepositorio
+    public class DisciplinaRepositorio : IDisciplinaRepositorio
     {
 
-        public void Salvar(Dificuldade dificuldade)
+        public void Salvar(Disciplina disciplina)
         {
             using (var contexto = new ContextoDeDados())
             {
-                contexto.Dificuldade.Add(dificuldade);
+                contexto.Disciplina.Add(disciplina);
                 contexto.SaveChanges();
             }
 
         }
-        public void Editar(Dificuldade dificuldade)
+        public void Editar(Disciplina disciplina)
         {
             throw new NotImplementedException();
         }
 
-        public void Excluir(Dificuldade dificuldade)
+
+        public void Exclui(Disciplina disciplina)
         {
             throw new NotImplementedException();
         }
-
-       
-
-
     }
 }

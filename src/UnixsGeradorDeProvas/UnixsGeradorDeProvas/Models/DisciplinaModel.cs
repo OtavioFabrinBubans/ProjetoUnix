@@ -6,13 +6,13 @@ using System.Web;
 
 namespace UnixsGeradorDeProvas.Models
 {
-    public class DificuldadeModel
+    public class DisciplinaModel
     {
-
         [Required]
         public int? Id { get; set; }
 
         [Required]
-        public string Descricao { get; set; }
+        public string Nome { get; set; }
+        
     }
 }

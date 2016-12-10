@@ -41,7 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dificuldade.cs" />
-    <Compile Include="IDificuldade.cs" />
+    <Compile Include="Disciplina.cs" />
+    <Compile Include="IDificuldadeRepositorio.cs" />
+    <Compile Include="IDisciplinaRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

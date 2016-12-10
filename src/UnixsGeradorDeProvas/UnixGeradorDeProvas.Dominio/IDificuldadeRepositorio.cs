@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UnixGeradorDeProvas.Dominio
 {
-    public interface IDificuldade
+    public interface IDificuldadeRepositorio
     {
         void Salvar(Dificuldade dificuldade);
         void Editar(Dificuldade dificuldade);

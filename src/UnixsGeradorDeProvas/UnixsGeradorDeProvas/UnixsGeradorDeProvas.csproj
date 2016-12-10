@@ -172,6 +172,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\DificuldadeModel.cs" />
+    <Compile Include="Models\DisciplinaModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -210,6 +211,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\CadastroDificuldade.cshtml" />
+    <Content Include="Views\Home\CadastroDisciplina.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -230,6 +232,10 @@
     <ProjectReference Include="..\UnixGeradorDeProvas.Repositorio\UnixsGeradorDeProvas.Repositorio.csproj">
       <Project>{6512fd68-d6fb-4e25-8f6b-b9b0333c91e3}</Project>
       <Name>UnixsGeradorDeProvas.Repositorio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnixsGeradordeProvas.Aplicativo\UnixsGeradordeProvas.Aplicativo.csproj">
+      <Project>{C1AF7108-8561-4ABF-8C4F-983443E87989}</Project>
+      <Name>UnixsGeradordeProvas.Aplicativo</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
