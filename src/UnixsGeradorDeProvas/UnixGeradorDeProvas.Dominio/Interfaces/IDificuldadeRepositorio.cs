@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UnixGeradorDeProvas.Dominio
+namespace UnixGeradorDeProvas.Dominio.Interfaces
 {
     public interface IDificuldadeRepositorio
     {

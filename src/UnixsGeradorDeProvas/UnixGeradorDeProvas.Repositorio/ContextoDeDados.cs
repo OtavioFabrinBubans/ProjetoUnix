@@ -16,10 +16,16 @@ namespace UnixsGeradorDeProvas.Repositorio
         {
 
         }
-
+        public DbSet<StatusQuestao> StatusQuestao { get; set; }
+        public DbSet<TipoQuestao> TipoQuestao { get; set; }
+        public DbSet<Questao> Questao { get; set; }
+        public DbSet<Profissional> Profissional { get; set; }
         public DbSet<Dificuldade> Dificuldade { get; set; }
         public DbSet<Disciplina> Disciplina { get; set; }
-
+        public DbSet<Funcoes> Funcoes { get; set; }
+        public DbSet<Pessoa> Pessoa { get; set; }
+        public DbSet<Aula> Aula { get; set; }
+        public DbSet<Polo> Polo { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

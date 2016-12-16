@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnixGeradorDeProvas.Dominio;
+using UnixGeradorDeProvas.Dominio.Interfaces;
 using UnixsGeradorDeProvas.Repositorio;
 
 namespace UnixGeradorDeProvas.Repositorio
 {
-    public class DificuldadeRepositorio :IDificuldadeRepositorio
+    public class DificuldadeRepositorio : IDificuldadeRepositorio
     {
 
         public void Salvar(Dificuldade dificuldade)
@@ -17,6 +14,12 @@ namespace UnixGeradorDeProvas.Repositorio
             {
                 contexto.Dificuldade.Add(dificuldade);
                 contexto.SaveChanges();
+
+      //          using (var context = new BloggingContext())
+      //         {
+      //              context.Database.ExecuteSqlCommand(
+      //                  "UPDATE dbo.Blogs SET Name = 'Another Name' WHERE BlogId = 1");
+      //          }
             }
 
         }
@@ -30,7 +33,7 @@ namespace UnixGeradorDeProvas.Repositorio
             throw new NotImplementedException();
         }
 
-       
+
 
 
     }

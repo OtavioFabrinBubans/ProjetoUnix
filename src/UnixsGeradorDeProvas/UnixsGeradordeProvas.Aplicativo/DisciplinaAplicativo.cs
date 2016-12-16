@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnixGeradorDeProvas.Dominio;
+﻿using UnixGeradorDeProvas.Dominio;
+using UnixGeradorDeProvas.Dominio.Interfaces;
 using UnixGeradorDeProvas.Repositorio;
 
 namespace UnixsGeradordeProvas.Aplicativo

@@ -5,25 +5,25 @@ using UnixsGeradorDeProvas.Repositorio;
 
 namespace UnixGeradorDeProvas.Repositorio
 {
-    public class DisciplinaRepositorio : IDisciplinaRepositorio
+    public class FuncoesRepositorio : IFuncoesRepositorio
     {
 
-        public void Salvar(Disciplina disciplina)
+        public void Salvar(Funcoes funcoes)
         {
             using (var contexto = new ContextoDeDados())
             {
-                contexto.Disciplina.Add(disciplina);
+                contexto.Funcoes.Add(funcoes);
                 contexto.SaveChanges();
             }
 
         }
-        public void Editar(Disciplina disciplina)
+        public void Editar(Funcoes funcoes)
         {
             throw new NotImplementedException();
         }
 
 
-        public void Exclui(Disciplina disciplina)
+        public void Excluir(Funcoes funcoes)
         {
             throw new NotImplementedException();
         }

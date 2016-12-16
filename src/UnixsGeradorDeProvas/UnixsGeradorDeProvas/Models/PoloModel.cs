@@ -1,22 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace UnixGeradorDeProvas.Dominio
+namespace UnixsGeradorDeProvas.Models
 {
-    public class Dificuldade
+    public class PoloModel
     {
 
+        [Required]
         public int? Id { get; set; }
 
+        [Required]
         public string Descricao { get; set; }
 
-
-        public Dificuldade()
-        {
-
-        }
     }
 }

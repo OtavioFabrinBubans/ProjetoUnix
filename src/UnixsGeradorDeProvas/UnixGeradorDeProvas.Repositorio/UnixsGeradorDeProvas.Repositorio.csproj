@@ -53,14 +53,12 @@
     <Compile Include="BaseRepositorioEntity.cs" />
     <Compile Include="ContextoDeDados.cs" />
     <Compile Include="DificuldadeRepositorio.cs" />
+    <Compile Include="PoloRepositorio.cs" />
+    <Compile Include="FuncoesRepositorio.cs" />
     <Compile Include="DisciplinaRepositorio.cs" />
-    <Compile Include="Migrations\201612062353192_Initial.cs" />
-    <Compile Include="Migrations\201612062353192_Initial.Designer.cs">
-      <DependentUpon>201612062353192_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201612092356191_Initial1.cs" />
-    <Compile Include="Migrations\201612092356191_Initial1.Designer.cs">
-      <DependentUpon>201612092356191_Initial1.cs</DependentUpon>
+    <Compile Include="Migrations\201612132252006_Initial.cs" />
+    <Compile Include="Migrations\201612132252006_Initial.Designer.cs">
+      <DependentUpon>201612132252006_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,11 +74,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201612062353192_Initial.resx">
-      <DependentUpon>201612062353192_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201612092356191_Initial1.resx">
-      <DependentUpon>201612092356191_Initial1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201612132252006_Initial.resx">
+      <DependentUpon>201612132252006_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

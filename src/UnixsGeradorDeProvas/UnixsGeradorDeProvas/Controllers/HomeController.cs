@@ -27,6 +27,16 @@ namespace UnixsGeradorDeProvas.Controllers
             return View();
         }
 
+        public ActionResult CadastroPolo()
+        {
+            return View();
+        }
+
+        public ActionResult CadastroFuncao()
+        {
+            return View();
+        }
+
 
         [HttpPost]
         public ActionResult SalvarDificuldade(DificuldadeModel model)
@@ -53,6 +63,36 @@ namespace UnixsGeradorDeProvas.Controllers
                 Nome = model.Nome
             };
             aplicativo.Salvar(disciplina);
+
+            return RedirectToAction("Index");
+
+        }
+
+        [HttpPost]
+        public ActionResult SalvarPolo(PoloModel model)
+        {
+            var aplicativo = new PoloAplicativo();
+            Polo polo = new Polo()
+            {
+                Id = model.Id.HasValue ? model.Id.Value : 0,
+                Descricao = model.Descricao
+            };
+            aplicativo.Salvar(polo);
+
+            return RedirectToAction("Index");
+
+        }
+
+        [HttpPost]
+        public ActionResult SalvarFuncao(FuncoesModel model)
+        {
+            var aplicativo = new FuncoesAplicativo();
+            Funcoes funcao = new Funcoes()
+            {
+                Id = model.Id.HasValue ? model.Id.Value : 0,
+                Descricao = model.Descricao
+            };
+            aplicativo.Salvar(funcao);
 
             return RedirectToAction("Index");
 

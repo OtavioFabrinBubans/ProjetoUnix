@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PoloAplicativo.cs" />
+    <Compile Include="FuncoesAplicativo.cs" />
     <Compile Include="DificuldadeAplicativo.cs" />
     <Compile Include="DisciplinaAplicativo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

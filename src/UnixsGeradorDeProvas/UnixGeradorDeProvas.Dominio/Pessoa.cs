@@ -6,17 +6,11 @@ using System.Threading.Tasks;
 
 namespace UnixGeradorDeProvas.Dominio
 {
-    public class Dificuldade
+    public class Pessoa
     {
-
         public int? Id { get; set; }
 
-        public string Descricao { get; set; }
+        public string Nome { get; set; }
 
-
-        public Dificuldade()
-        {
-
-        }
     }
 }
