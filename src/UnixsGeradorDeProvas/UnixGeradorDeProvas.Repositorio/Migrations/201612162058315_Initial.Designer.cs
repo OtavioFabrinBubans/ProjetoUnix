@@ -13,7 +13,7 @@ namespace UnixGeradorDeProvas.Repositorio.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201612132252006_Initial"; }
+            get { return "201612162058315_Initial"; }
         }
         
         string IMigrationMetadata.Source

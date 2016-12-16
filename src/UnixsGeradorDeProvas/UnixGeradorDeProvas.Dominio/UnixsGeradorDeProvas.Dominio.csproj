@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aula.cs" />
     <Compile Include="Dificuldade.cs" />
     <Compile Include="Disciplina.cs" />
     <Compile Include="Funcoes.cs" />
@@ -51,7 +50,6 @@
     <Compile Include="StatusQuestao.cs" />
     <Compile Include="Pessoa.cs" />
     <Compile Include="Polo.cs" />
-    <Compile Include="Profissional.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Questao.cs" />
     <Compile Include="TipoQuestao.cs" />

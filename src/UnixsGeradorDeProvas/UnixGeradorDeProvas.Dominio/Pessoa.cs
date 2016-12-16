@@ -12,5 +12,14 @@ namespace UnixGeradorDeProvas.Dominio
 
         public string Nome { get; set; }
 
+        public virtual ICollection<Disciplina> Disciplinas { get; set; }
+
+        public virtual ICollection<Funcoes> Funcoes { get; set; }
+
+        public Pessoa()
+        {
+
+        }
+
     }
 }

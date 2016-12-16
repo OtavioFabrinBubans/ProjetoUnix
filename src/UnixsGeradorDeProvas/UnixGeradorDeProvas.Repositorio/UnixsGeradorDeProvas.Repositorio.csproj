@@ -53,14 +53,14 @@
     <Compile Include="BaseRepositorioEntity.cs" />
     <Compile Include="ContextoDeDados.cs" />
     <Compile Include="DificuldadeRepositorio.cs" />
+    <Compile Include="Migrations\201612162058315_Initial.cs" />
+    <Compile Include="Migrations\201612162058315_Initial.Designer.cs">
+      <DependentUpon>201612162058315_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PoloRepositorio.cs" />
     <Compile Include="FuncoesRepositorio.cs" />
     <Compile Include="DisciplinaRepositorio.cs" />
-    <Compile Include="Migrations\201612132252006_Initial.cs" />
-    <Compile Include="Migrations\201612132252006_Initial.Designer.cs">
-      <DependentUpon>201612132252006_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -74,8 +74,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201612132252006_Initial.resx">
-      <DependentUpon>201612132252006_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201612162058315_Initial.resx">
+      <DependentUpon>201612162058315_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

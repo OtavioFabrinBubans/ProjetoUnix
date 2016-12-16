@@ -13,6 +13,8 @@ namespace UnixGeradorDeProvas.Dominio
 
         public string Descricao { get; set; }
 
+        public virtual ICollection<Pessoa> Pessoas { get; set; }
+
 
         public Funcoes()
         {
